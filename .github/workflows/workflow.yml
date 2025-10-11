@@ -1,6 +1,6 @@
 name: CI
 
-on:
+on: [push]
   push:
   pull_request:
 
@@ -26,3 +26,16 @@ jobs:
 
       - name: Black (format check)
         run: black --check .
+
+      - name: Run bias_review.py
+        run: python bias_review.py
+
+      - name: Run safety_review.py
+        run: python safety_review.py
+
+      - name: Run demo.py
+        run: python demo.py
+
+      - name: Run gemini.py
+        run: python gemini.py
+
