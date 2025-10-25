@@ -85,18 +85,20 @@ A simple GUI and feature flow diagram are in progress for presentation next week
 
 ## To-Do Items
 
- - [] Select and integrate an LMM (likely Gemini or OpenAI-based).
+ - [ ] Select and integrate an LMM (likely Gemini or OpenAI-based).
 
- - [] Build the initial GUI for demo presentation.
+ - [ ] Build the initial GUI for demo presentation.
 
- - [] Implement video captioning and feed summarization modules.
+ - [ ] Implement video captioning and feed summarization modules.
 
- - [] Add AI moderation and bias review systems.
+ - [ ] Add AI moderation and bias review systems.
 
- - [] Develop user testing framework for accessibility and fairness.
+ - [ ] Develop user testing framework for accessibility and fairness.
 
- - [] Prepare final presentation visuals and documentation.
+ - [ ] Prepare final presentation visuals and documentation.
 
 Team Delta
+
 California State University, Fullerton — CPSC 362: Foundations of Software Engineering
+
 Fall 2025
