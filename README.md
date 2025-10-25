@@ -1,6 +1,6 @@
 # Team Delta: AI-Enhanced Social Media Platform  
 ### Group 5 (Social Media)
-### Memebers: Brian, Joe, Adam, Chase, Khan
+### Members: Brian, Joe, Adam, Chase, Khan
 ## Subtitle  
 Integrating advanced AI features to improve user experience, safety, and accessibility across social media.
 
