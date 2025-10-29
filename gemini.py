@@ -1,5 +1,8 @@
 # Currently in progress. Using Google Gemini as a basis, but having troubles with installation.
 # Below code is basically Google's code (asides from the question).
+
+# 10.28.2025: Swapped to using generate_content_stream to input smaller chunks at a time.
+
 # Code allows user to input sample posts, combining them into a single string and summarizing all of their info.
 # NOTE: may need to install google and gen-ai into program if not already done
 
@@ -18,9 +21,12 @@ while i != "0":
     i = input("Would you like to submit another post? Enter 0 if no, anything else if yes. ")
 
 
-summaryrequest = "Summarize the following posts: " + promptlist # creating prompt to input into Gemini
-response = client.models.generate_content(
+summaryrequest = "Summarize the following posts (keep it to one paragraph): " + promptlist # creating prompt to input into Gemini
+response = client.models.generate_content_stream(
     model="gemini-2.5-flash", contents=summaryrequest # setting contents to summaryrequest for the full prompt
 )
-
-print("\nGEMINI: ",response.text,"\n")
+print("\n\n\n")
+for i in response: # loop iterating to output text
+    if i.text: # checks if chunk of "i" contains text and prints it
+        print(i.text, end="")
+print("\n\n\n")
