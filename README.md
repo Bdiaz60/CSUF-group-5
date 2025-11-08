@@ -85,9 +85,9 @@ A simple GUI and feature flow diagram are in progress for presentation next week
 
 ## To-Do Items
 
- - [ ] Select and integrate an LMM (likely Gemini or OpenAI-based).
+ - [x] Select and integrate an LMM (likely Gemini or OpenAI-based).
 
- - [ ] Build the initial GUI for demo presentation.
+ - [x] Build the initial GUI for demo presentation.
 
  - [ ] Implement video captioning and feed summarization modules.
 
