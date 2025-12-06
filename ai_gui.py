@@ -44,7 +44,7 @@ client = genai.Client() # If you're wondering, the API key is directly set as PC
 config = types.GenerateContentConfig(tools=[UploadStatus]) # adjusts config to use UploadStatus
 
 root = tk.Tk()
-root.title("AI Subtitle Generator")
+root.title("AI Functionality Demonstration GUI")
 root.geometry("900x600")
 root.resizable(False, False)
 
@@ -420,6 +420,7 @@ airesponsevar.set('')
 airesponsevar.set("Action output (AI) goes here.")
 airesponsetextbox = tk.Label(rightframe,textvariable=airesponsevar,wraplength=445)
 airesponsetextbox.pack()
+
 
 
 
